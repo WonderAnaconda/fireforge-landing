@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fireforge - Options Strategy Backtesting and Optimization</title>
+    <meta name="description" content="Fireforge is a powerful options backtesting and optimization tool that instantly recommends strategies tailored to your unique risk profile and trading goals.">
+
+    <!-- Open Graph / Facebook Meta Tags -->
+    <meta property="og:url" content="https://fireforge.koyeb.app/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Fireforge - Options Strategy Backtesting and Optimization">
+    <meta property="og:description" content="Fireforge saves traders hours of guesswork with 12+ years of precomputed data, delivering strategy recommendations in seconds. Say goodbye to manual backtesting.">
+    <meta property="og:image" content="https://opengraph.b-cdn.net/production/images/c1f17243-8c88-4d44-912b-138685da663c.png?token=q1oYNWGLVclOyI46aOsfdeVJVvkSCd9qkJ9qgEXaEmk&height=499&width=1200&expires=33266341079">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="fireforge.koyeb.app">
+    <meta property="twitter:url" content="https://fireforge.koyeb.app/">
+    <meta name="twitter:title" content="Fireforge - Options Strategy Backtesting and Optimization">
+    <meta name="twitter:description" content="Fireforge instantly finds your perfect options strategy with 12+ years of precomputed data, tailored to your risk and goals.">
+    <meta name="twitter:image" content="https://opengraph.b-cdn.net/production/images/c1f17243-8c88-4d44-912b-138685da663c.png?token=q1oYNWGLVclOyI46aOsfdeVJVvkSCd9qkJ9qgEXaEmk&height=499&width=1200&expires=33266341079">
+
+    <!-- Additional Meta Tags -->
+    <meta name="author" content="Fireforge Team">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://fireforge.koyeb.app/">
+
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <style>
+        body {
+            background-color: rgb(14,17,23);
+            background-image: url('images/lines_bg.svg');
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        .reveal {
+            opacity: 0;
+            transform: translateX(-100px);
+            transition: all 0.8s ease;
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        .reveal-right {
+            opacity: 0;
+            transform: translateX(100px);
+            transition: all 0.8s ease;
+        }
+        .reveal-right.active {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        .reveal-up {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 0.8s ease;
+        }
+        .reveal-up.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        html {
+            scroll-snap-type: y mandatory;
+            scroll-behavior: smooth;
+        }
+        section {
+            scroll-snap-align: start;
+            scroll-snap-stop: always;
+        }
+        header {
+            scroll-snap-align: start;
+            scroll-snap-stop: always;
+        }
+        .typing::after {
+            content: '|';
+            animation: blink 1s step-end infinite;
+        }
+        @keyframes blink {
+            from, to { opacity: 1 }
+            50% { opacity: 0 }
+        }
+        .gradient-text {
+            background: linear-gradient(45deg, #60A5FA, #3B82F6);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="text-gray-100 scroll-smooth">
+    <!-- Hero Section -->
+    <header class="min-h-screen flex items-center justify-center relative overflow-hidden">
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="text-center animate__animated animate__fadeIn">
+                <div class="mb-16">
+                    <img src="images/logo.png" alt="Fireforge Logo" class="h-40 mx-auto animate__animated animate__pulse animate__infinite">
+                </div>
+                <h1 class="text-6xl font-bold mb-6">
+                    <span class="gradient-text">Discover</span> Your Ideal Options Strategy—<span class="gradient-text">Fast</span>
+                </h1>
+                <p class="text-xl max-w-3xl mx-auto leading-relaxed mb-8">
+                    No more endless backtesting, no more guesswork. Fireforge gives you <span class="text-blue-400">instant, data-driven</span> strategy recommendations based on your unique <span class="text-blue-400">risk profile</span> and trading goals.
+                </p>
+                <a href="#learn-more" class="animate-bounce inline-block mt-16" style="animation-duration: 2s;">
+                    <svg class="w-8 h-8 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6">
+        
+        <!-- What Is Section -->
+        <section id="learn-more" class="min-h-screen flex items-center py-20 reveal">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2">
+                    <h2 class="text-4xl font-bold mb-6 typing">What Is <span class="text-blue-400">Fireforge</span>?</h2>
+                    <p class="text-xl leading-relaxed text-gray-300 mb-6">
+                        A <span class="text-blue-400">smarter way</span> to find options strategies. Fireforge is an advanced options backtesting and optimization tool that helps traders find tailored strategies without the hassle.
+                    </p>
+                    <p class="text-lg leading-relaxed text-gray-300">
+                        With over <span class="text-blue-400">12 years of precomputed backtesting data</span>, Fireforge puts real trading insights at your fingertips, taking the trial and error out of strategy selection.
+                    </p>
+                </div>
+                <div class="md:w-1/2" data-aos="fade-left" data-aos-delay="300" data-aos-duration="800">
+                    <div class="bg-gray-800 p-8 rounded-lg shadow-xl transform hover:scale-105 transition-transform duration-300">
+                        <ul class="space-y-6">
+                            <li class="flex items-center">
+                                <svg class="w-8 h-8 text-blue-400 mr-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"></path>
+                                </svg>
+                                <div>
+                                    <span class="text-lg font-semibold text-gray-200">12+ Years of Historical Data</span>
+                                    <p class="text-sm text-gray-400">See how strategies perform across different market conditions</p>
+                                </div>
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-8 h-8 text-blue-400 mr-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M3 6V5h11v1H3zm0 4v-1h11v1H3zm0 4v-1h7v1H3zm15.293-3.293l-3 3a1 1 0 01-1.414 0l-1.586-1.586a1 1 0 011.414-1.414l.879.879 2.293-2.293a1 1 0 111.414 1.414z"></path>
+                                </svg>
+                                <div>
+                                    <span class="text-lg font-semibold text-gray-200">Instant Strategy Analysis</span>
+                                    <p class="text-sm text-gray-400">Get results in seconds, not hours</p>
+                                </div>
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-8 h-8 text-blue-400 mr-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z"></path>
+                                </svg>
+                                <div>
+                                    <span class="text-lg font-semibold text-gray-200">Personalized Recommendations</span>
+                                    <p class="text-sm text-gray-400">Tailored to your risk profile and goals</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Fireforge Section -->
+        <section class="min-h-screen flex items-center py-20 reveal-right">
+            <div class="w-full">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold mb-6">Why <span class="text-blue-400">Fireforge</span>?</h2>
+                    <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                        Traditional backtesting can be time-consuming and frustrating. Fireforge eliminates the need to manually tweak strategies by doing the heavy lifting for you.
+                    </p>
+                </div>
+                <div class="grid md:grid-cols-2 gap-12">
+                    <div class="bg-gray-800 p-8 rounded-lg shadow-xl transform hover:scale-105 transition-all duration-300">
+                        <h3 class="text-2xl font-bold mb-4 text-blue-400">For Traders of All Levels</h3>
+                        <p class="text-gray-300 leading-relaxed">
+                            Whether you're a seasoned options trader or just starting out, Fireforge offers value. If you know what puts and calls are, you're ready to dive in! Access powerful analytics without needing advanced financial knowledge.
+                        </p>
+                    </div>
+                    <div class="bg-gray-800 p-8 rounded-lg shadow-xl transform hover:scale-105 transition-all duration-300">
+                        <h3 class="text-2xl font-bold mb-4 text-blue-400">Skip Straight to Results</h3>
+                        <p class="text-gray-300 leading-relaxed">
+                            With our database of precomputed results, you get to skip straight to the best strategies that fit your specific criteria—no waiting, no tinkering. Just instant, actionable insights.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works -->
+        <section class="min-h-screen flex items-center py-20 reveal">
+            <div class="w-full">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold">How <span class="text-blue-400">Fireforge</span> Works</h2>
+                    <p class="text-xl text-gray-300 mt-4 max-w-3xl mx-auto">
+                        Fireforge isn't just about raw data; it's about giving you actionable insights. Three simple steps to transform your trading approach:
+                    </p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-gray-800 p-6 rounded-lg text-center transform hover:scale-105 transition-all duration-300">
+                        <div class="w-16 h-16 bg-blue-400 rounded-full flex items-center justify-center mx-auto mb-4 text-white">
+                            <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">Define Your Goals</h3>
+                        <p class="text-gray-300">Tell us what matters most to you - high win rates, low risk, or a perfect balance</p>
+                    </div>
+                    <div class="bg-gray-800 p-6 rounded-lg text-center transform hover:scale-105 transition-all duration-300">
+                        <div class="w-16 h-16 bg-blue-400 rounded-full flex items-center justify-center mx-auto mb-4 text-white">
+                            <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M2 10a8 8 0 018-8v8h8a8 8 0 11-16 0z"></path>
+                                <path d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">AI Analysis</h3>
+                        <p class="text-gray-300">Our algorithms analyze years of market data to find your perfect match</p>
+                    </div>
+                    <div class="bg-gray-800 p-6 rounded-lg text-center transform hover:scale-105 transition-all duration-300">
+                        <div class="w-16 h-16 bg-blue-400 rounded-full flex items-center justify-center mx-auto mb-4 text-white">
+                            <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"></path>
+                                <path fill-rule="evenodd" d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm9.707 5.707a1 1 0 00-1.414-1.414L9 12.586l-1.293-1.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">Get Results</h3>
+                        <p class="text-gray-300">Receive tailored strategy recommendations instantly</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="min-h-screen flex items-center py-20 text-center reveal-up">
+            <div class="w-full">
+                <h2 class="text-5xl font-bold mb-8">Ready to Level Up Your Options Trading?</h2>
+                <p class="text-xl mb-12 text-gray-300 max-w-3xl mx-auto">
+                    Say goodbye to hours of backtesting and hello to a streamlined, smarter way to find winning options strategies. With Fireforge, you'll gain the clarity and precision you need to make informed trading decisions in seconds.
+                </p>
+                <a href="https://fireforge.koyeb.app/" class="inline-block bg-blue-500 text-white px-12 py-6 rounded-lg text-xl font-bold hover:bg-blue-600 transition-all duration-300 transform hover:scale-105">
+                    Get Started Free →
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Floating CTA -->
+    <div class="fixed bottom-0 w-full bg-gradient-to-r from-blue-600 to-blue-400 text-white text-center py-4 shadow-xl animate-[slideInFromRight_0.5s_ease-out]">
+        <a href="https://fireforge.koyeb.app/" class="text-xl font-bold hover:text-gray-100 transition-colors duration-300">
+            Launch Fireforge Now <span class="inline-block">→</span>
+        </a>
+    </div>
+
+    <script>
+        // Reveal animations on scroll
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal, .reveal-right, .reveal-up");
+            reveals.forEach(element => {
+                var windowHeight = window.innerHeight;
+                var elementTop = element.getBoundingClientRect().top;
+                var elementVisible = 150;
+                if (elementTop < windowHeight - elementVisible) {
+                    element.classList.add("active");
+                }
+            });
+        }
+
+        // Typing animation for headers
+        function typeWriter(element) {
+            const text = element.textContent;
+            element.textContent = '';
+            let i = 0;
+            
+            function type() {
+                if (i < text.length) {
+                    element.textContent += text.charAt(i);
+                    i++;
+                    setTimeout(type, 100);
+                }
+            }
+            
+            type();
+        }
+
+        function initTypeWriters() {
+            document.querySelectorAll('.typing').forEach(element => {
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            typeWriter(element);
+                            observer.unobserve(element);
+                        }
+                    });
+                });
+                observer.observe(element);
+            });
+        }
+
+        window.addEventListener("scroll", reveal);
+        window.addEventListener("DOMContentLoaded", initTypeWriters);
+        reveal(); // Initial check
+    </script>
+</body>
+</html>
