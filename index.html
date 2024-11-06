@@ -56,38 +56,22 @@
             background-attachment: fixed;
             background-size: cover;
         }
-        .reveal {
+        .reveal, .reveal-right, .reveal-up {
             opacity: 0;
-            transform: translateX(-100px);
-            transition: all 0.8s ease;
+            visibility: hidden;
+            transition: opacity 0.8s ease;
         }
-        .reveal.active {
+        .reveal.active, .reveal-right.active, .reveal-up.active {
             opacity: 1;
-            transform: translateX(0);
-        }
-        .reveal-right {
-            opacity: 0;
-            transform: translateX(100px);
-            transition: all 0.8s ease;
-        }
-        .reveal-right.active {
-            opacity: 1;
-            transform: translateX(0);
-        }
-        .reveal-up {
-            opacity: 0;
-            transform: translateY(50px);
-            transition: all 0.8s ease;
-        }
-        .reveal-up.active {
-            opacity: 1;
-            transform: translateY(0);
+            visibility: visible;
         }
         html {
             scroll-snap-type: y mandatory;
             scroll-behavior: smooth;
+            /* scroll-padding-top: 50px; Added this line */
         }
         section {
+            min-height: 100vh;
             scroll-snap-align: start;
             scroll-snap-stop: always;
             scroll-margin-top: 0;
