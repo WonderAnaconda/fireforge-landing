@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FireForge - Best Options Trading Strategy Backtesting Tool | Free Options Analyzer</title>
+    <title>FireForge - Best Options Trading Strategy Backtesting Tool | Free Options Explorer</title>
     <meta name="description" content="FireForge is the leading options strategy backtesting tool. Get instant, AI-powered recommendations for profitable options trades based on 12+ years of market data. Try free today!">
     <!-- <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔥</text></svg>"> -->
     <link rel="icon" href="https://www.fireforge.me/favicon.svg" type="image/svg+xml">
@@ -29,7 +29,7 @@
     <!-- Open Graph / Facebook Meta Tags -->
     <meta property="og:url" content="https://fireforge.me">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="FireForge - Best Options Trading Strategy Backtesting Tool | Free Options Analyzer">
+    <meta property="og:title" content="FireForge - Best Options Trading Strategy Backtesting Tool | Free Options Explorer">
     <meta property="og:description" content="Discover profitable options trading strategies instantly with FireForge's AI-powered backtesting tool. 12+ years of market data analysis. Start optimizing your trades for free today.">
     <meta property="og:image" content="https://opengraph.b-cdn.net/production/images/5b85f931-9923-40c4-a997-cf0853786629.png?token=Y5QJfCWcb9yCXotrMjME2fnGnLITxWxB2j8STyo7dEQ&height=439&width=1200&expires=33266859070">
 
@@ -37,14 +37,14 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta property="twitter:domain" content="fireforge.me">
     <meta property="twitter:url" content="https://fireforge.me">
-    <meta name="twitter:title" content="FireForge - Best Options Trading Strategy Backtesting Tool | Free Options Analyzer">
+    <meta name="twitter:title" content="FireForge - Best Options Trading Strategy Backtesting Tool | Free Options Explorer">
     <meta name="twitter:description" content="Find winning options strategies in seconds with FireForge's AI-powered backtesting. 12+ years of market data analysis. Start free today.">
     <meta name="twitter:image" content="https://opengraph.b-cdn.net/production/images/c1f17243-8c88-4d44-912b-138685da663c.png?token=q1oYNWGLVclOyI46aOsfdeVJVvkSCd9qkJ9qgEXaEmk&height=499&width=1200&expires=33266341079">
 
     <!-- Additional Meta Tags -->
     <meta name="author" content="FireForge Team">
     <meta name="robots" content="index, follow, max-image-preview:large">
-    <meta name="keywords" content="options trading, options backtesting, options strategy, options analyzer, trading optimization, algorithmic trading, options screener, options trading tool">
+    <meta name="keywords" content="options trading, options backtesting, options strategy, options Explorer, trading optimization, algorithmic trading, options screener, options trading tool">
     <link rel="canonical" href="https://fireforge.me">
 
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
@@ -68,7 +68,6 @@
         html {
             scroll-snap-type: y mandatory;
             scroll-behavior: smooth;
-            /* scroll-padding-top: 50px; Added this line */
         }
         section {
             min-height: 100vh;
@@ -95,6 +94,75 @@
             background-clip: text;
             -webkit-text-fill-color: transparent;
         }
+        .comparison-card {
+            backdrop-filter: blur(8px);
+            background: rgba(17, 24, 39, 0.8);
+            border: 1px solid rgba(59, 130, 246, 0.2);
+            transition: all 0.3s ease;
+        }
+        .comparison-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(59, 130, 246, 0.2);
+        }
+        .comparison-arrow {
+            position: relative;
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        .image-glow {
+            filter: drop-shadow(0 0 10px rgba(59, 130, 246, 0.3));
+        }
+        .before-label, .after-label {
+            background: linear-gradient(45deg, #3B82F6, #60A5FA);
+            transform: translateY(-50%);
+            transition: all 0.3s ease;
+        }
+        .comparison-card:hover .before-label,
+        .comparison-card:hover .after-label {
+            transform: translateY(-50%) scale(1.1);
+        }
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            100% {
+                background-position: 200% 50%;
+            }
+        }
+        @keyframes shine {
+            0% {
+                background-position: -200% 50%;
+            }
+            100% {
+                background-position: 200% 50%;
+            }
+        }
+        .animate-gradient {
+            background: linear-gradient(90deg, #60A5FA, #2563EB, #60A5FA);
+            background-size: 200% 100%;
+            animation: gradient 3s linear infinite;
+            -webkit-background-clip: text;
+            background-clip: text;
+            position: relative;
+        }
+        .animate-gradient::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            background-size: 200% 100%;
+            animation: shine 3s linear infinite;
+            -webkit-background-clip: text;
+            background-clip: text;
+        }
+                    
     </style>
 
     <!-- Google tag (gtag.js) -->
@@ -137,7 +205,7 @@
         <section id="learn-more" class="min-h-screen flex items-center py-20 reveal">
             <div class="flex flex-col md:flex-row items-center gap-12">
                 <div class="md:w-1/2">
-                    <h2 class="text-4xl font-bold mb-6 typing">What Is <span class="text-blue-400">FireForge</span> Options Analyzer?</h2>
+                    <h2 class="text-4xl font-bold mb-6 typing">What Is <span class="text-blue-400">FireForge</span> Options Explorer?</h2>
                     <p class="text-xl leading-relaxed text-gray-300 mb-6">
                         The <span class="text-blue-400">most advanced options strategy finder</span> available. FireForge combines AI technology with comprehensive market data to help traders discover profitable options strategies without the guesswork.
                     </p>
@@ -188,7 +256,7 @@
         <section class="min-h-screen flex items-center py-20 reveal-right">
             <div class="w-full">
                 <div class="text-center mb-16">
-                    <h2 class="text-4xl font-bold mb-6">Why Choose <span class="text-blue-400">FireForge</span> Options Analyzer?</h2>
+                    <h2 class="text-4xl font-bold mb-6">Why Choose <span class="text-blue-400">FireForge</span> Options Explorer?</h2>
                     <p class="text-xl text-gray-300 max-w-3xl mx-auto">
                         Stop spending hours on manual options backtesting. FireForge's AI-powered platform analyzes millions of data points to find your perfect strategy in seconds.
                     </p>
@@ -208,6 +276,7 @@
                             <p class="text-gray-300 leading-relaxed">
                                 From beginners to professional traders, FireForge makes advanced options analysis accessible. Basic understanding of puts and calls is all you need to start optimizing your trades.
                             </p>
+                            <img src="images/vix_dep_2.png" alt="VIX Dependency" class="mt-4 rounded-lg">
                         </div>
                     </div>
                     <div class="group relative overflow-hidden bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 p-8 rounded-lg shadow-2xl transform hover:scale-105 transition-all duration-300">
@@ -224,6 +293,7 @@
                             <p class="text-gray-300 leading-relaxed">
                                 Access our vast database of pre-analyzed options strategies instantly. Get personalized recommendations based on your risk tolerance and profit goals in seconds.
                             </p>
+                            <img src="images/top_strats_redacted3.png" alt="Top Strategies" class="mt-4 rounded-lg">
                         </div>
                     </div>
                 </div>
@@ -234,13 +304,13 @@
         <section class="min-h-screen flex items-center py-20 reveal">
             <div class="w-full">
                 <div class="text-center mb-16">
-                    <h2 class="text-4xl font-bold">How <span class="text-blue-400">FireForge</span> Options Analyzer Works</h2>
+                    <h2 class="text-4xl font-bold">How <span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-600 animate-gradient">FireForge</span> Options Explorer Works</h2>
                     <p class="text-xl text-gray-300 mt-4 max-w-3xl mx-auto">
                         Transform your options trading with our powerful yet simple three-step process:
                     </p>
                 </div>
                 <div class="grid md:grid-cols-3 gap-8">
-                    <div class="group relative overflow-hidden bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 p-8 rounded-lg shadow-2xl transform hover:scale-105 transition-all duration-300">
+                    <div class="group relative overflow-hidden bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 p-8 rounded-lg shadow-2xl transform hover:scale-105 transition-all duration-300 reveal-up">
                         <div class="absolute inset-0 bg-gradient-to-r from-blue-400/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                         <div class="relative z-10">
                             <div class="w-16 h-16 bg-blue-400 rounded-full flex items-center justify-center mx-auto mb-4 text-white">
@@ -248,11 +318,12 @@
                                     <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
                                 </svg>
                             </div>
-                            <h3 class="text-xl font-bold mb-4">Set Your Trading Parameters</h3>
+                            <h3 class="text-xl font-bold mb-4 text-center">Set Your Trading Parameters</h3>
                             <p class="text-gray-300">Input your preferred win rate, risk tolerance, and profit targets to customize your strategy search</p>
+                            <!-- <img src="images/settings_detail.png" alt="Settings Detail" class="mt-4 rounded-lg w-full h-48 object-cover"> -->
                         </div>
                     </div>
-                    <div class="group relative overflow-hidden bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 p-8 rounded-lg shadow-2xl transform hover:scale-105 transition-all duration-300">
+                    <div class="group relative overflow-hidden bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 p-8 rounded-lg shadow-2xl transform hover:scale-105 transition-all duration-300 reveal-up" style="transition-delay: 200ms">
                         <div class="absolute inset-0 bg-gradient-to-r from-blue-400/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                         <div class="relative z-10">
                             <div class="w-16 h-16 bg-blue-400 rounded-full flex items-center justify-center mx-auto mb-4 text-white">
@@ -261,11 +332,12 @@
                                     <path d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z"></path>
                                 </svg>
                             </div>
-                            <h3 class="text-xl font-bold mb-4">Advanced AI Analysis</h3>
+                            <h3 class="text-xl font-bold mb-4 text-center">Advanced AI Analysis</h3>
                             <p class="text-gray-300">Our machine learning algorithms analyze 12+ years of market data to find optimal strategies</p>
+                            <!-- <img src="images/heatmaps_4.png" alt="Heatmap" class="mt-4 rounded-lg w-full h-48 object-cover"> -->
                         </div>
                     </div>
-                    <div class="group relative overflow-hidden bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 p-8 rounded-lg shadow-2xl transform hover:scale-105 transition-all duration-300">
+                    <div class="group relative overflow-hidden bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 p-8 rounded-lg shadow-2xl transform hover:scale-105 transition-all duration-300 reveal-up" style="transition-delay: 400ms">
                         <div class="absolute inset-0 bg-gradient-to-r from-blue-400/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                         <div class="relative z-10">
                             <div class="w-16 h-16 bg-blue-400 rounded-full flex items-center justify-center mx-auto mb-4 text-white">
@@ -274,11 +346,83 @@
                                     <path fill-rule="evenodd" d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm9.707 5.707a1 1 0 00-1.414-1.414L9 12.586l-1.293-1.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
                                 </svg>
                             </div>
-                            <h3 class="text-xl font-bold mb-4">Get Actionable Results</h3>
-                            <p class="text-gray-300">Receive detailed strategy recommendations with historical performance metrics</p>
+                            <h3 class="text-xl font-bold mb-4 text-center">Get Actionable Results</h3>
+                            <p class="text-gray-300">Receive detailed strategy recommendations with historical performance metrics and custom settings</p>
+                            <!-- <img src="images/perf2.png" alt="Strategy Details" class="mt-4 rounded-lg w-full h-48 object-cover"> -->
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <!-- Before and After Section 1 -->
+        <section class="min-h-screen flex flex-col justify-center items-center py-12 text-center reveal-up">
+            <div class="w-full px-4">
+                <div class="mb-8">
+                    <h2 class="text-5xl font-bold mb-6 leading-normal">
+                        <span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-600 animate-gradient">Find the best,</span> drop the rest
+                    </h2>
+                    <p class="text-xl text-gray-300  mx-auto leading-relaxed">
+                        Transform your trading by using strategies only in the environment that they perform best in. <br> Get rid of large drawdowns and use the right strategies at the right times.
+                    </p>
+                </div>
+                <div class="flex flex-col md:flex-row justify-center items-center space-y-8 md:space-y-0 md:space-x-16">
+                    
+                    <div class="flex flex-col md:flex-row justify-center items-center space-y-8 md:space-y-0 md:space-x-16">
+
+                        <!-- Before Image -->
+                        <div class="w-full md:w-1/2 text-center transform -translate-x-full opacity-0 transition-all duration-1000" id="before-image">
+                            <img src="images/perf.png" alt="Performance Before Using FireForge" 
+                                class="w-full h-96 object-contain mb-4 transition-transform duration-300 scale-110 filter brightness-110 image-glow"
+                                loading="lazy"
+                                decoding="async">
+                            <p class="text-gray-300 italic">Before: Huge swings and large drawdowns</p>
+                        </div>
+
+                        <!-- Arrow -->
+                        <div class="comparison-arrow hidden md:block" style="animation: sideToSide 1.5s ease-in-out infinite">
+                            <svg class="w-24 h-24 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                            </svg>
+                            <style>
+                                @keyframes sideToSide {
+                                    0%, 100% { transform: translateX(0); }
+                                    50% { transform: translateX(10px); }
+                                }
+                            </style>
+                        </div>
+
+                        <!-- After Image -->
+                        <div class="w-full md:w-1/2 text-center transform -translate-x-full opacity-0 transition-all duration-1000" id="after-image">
+                            <img src="images/perf2.png" alt="Performance After Using FireForge" 
+                                class="w-full h-96 object-contain mb-4 transition-transform duration-300 scale-110 filter brightness-110 image-glow"
+                                loading="lazy"
+                                decoding="async">
+                            <p class="text-gray-300 italic">After: The same strategy, selectively applied</p>
+                        </div>
+                    </div>
+
+                    <script>
+                        const observer = new IntersectionObserver((entries) => {
+                            entries.forEach(entry => {
+                                if (entry.isIntersecting) {
+                                    // Trigger first image animation
+                                    setTimeout(() => {
+                                        document.getElementById('before-image').classList.remove('-translate-x-full', 'opacity-0');
+                                    }, 300);
+                                    
+                                    // Trigger second image animation after the first one
+                                    setTimeout(() => {
+                                        document.getElementById('after-image').classList.remove('-translate-x-full', 'opacity-0');
+                                    }, 1000);
+                                    
+                                    observer.unobserve(entry.target);
+                                }
+                            });
+                        }, { threshold: 0.1 });
+
+                        observer.observe(document.getElementById('before-image'));
+                    </script>
             </div>
         </section>
 
