@@ -198,9 +198,114 @@
         </div>
     </header>
 
+    <div class="w-full">
+        <!-- Strategy Visualization Section -->
+        <section class="min-h-screen relative flex items-center justify-center overflow-hidden py-20">
+            <!-- Background Animation Layer -->
+            <div class="absolute inset-0 z-0">
+                <div class="strategy-images">
+                    <img src="images/Bull_Put_Spread_PL.png" class="floating-strategy" alt="Strategy visualization">
+                    <img src="images/Iron_Condor_PL.png" class="floating-strategy" alt="Strategy visualization">
+                    <img src="images/Iron_Butterfly_PL.png" class="floating-strategy" alt="Strategy visualization">
+                    <img src="images/Long_Straddle_PL.png" class="floating-strategy" alt="Strategy visualization">
+                    <img src="images/Iron_Lizard_PL.png" class="floating-strategy" alt="Strategy visualization">
+                    <img src="images/Bull_Put_Spread_PL.png" class="floating-strategy" alt="Strategy visualization">
+                    <img src="images/Iron_Condor_PL.png" class="floating-strategy" alt="Strategy visualization">
+                    <img src="images/Iron_Butterfly_PL.png" class="floating-strategy" alt="Strategy visualization">
+                </div>
+            </div>
+
+            <!-- Foreground Content -->
+            <div class="relative z-10 max-w-4xl mx-auto text-center px-6">
+                <h2 class="text-5xl md:text-5xl font-bold leading-tight bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-600 animate-gradient">
+                    Beauty in Simplicity<br><br>
+                </h2>
+                <h2 class="text-4xl text-gray-300 font-bold leading-tight">
+                    <span>Define Your Metrics,</span><br>
+                    <span>FireForge Finds the Right Strategy</span>
+                </h2>
+            </div>
+
+            <style>
+                .strategy-images {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    perspective: 1000px;
+                }
+
+                .floating-strategy {
+                    position: absolute;
+                    width: 200px;
+                    height: 200px;
+                    opacity: 0.3;
+                    animation: float 25s linear infinite;
+                    transform-style: preserve-3d;
+                }
+
+                .floating-strategy:nth-child(1) {
+                    top: 15%;
+                    animation-delay: 0s;
+                }
+
+                .floating-strategy:nth-child(2) {
+                    top: 75%;
+                    animation-delay: -3s;
+                }
+
+                .floating-strategy:nth-child(3) {
+                    top: 45%;
+                    animation-delay: -7s;
+                }
+
+                .floating-strategy:nth-child(4) {
+                    top: 85%;
+                    animation-delay: -11s;
+                }
+
+                .floating-strategy:nth-child(5) {
+                    top: 25%;
+                    animation-delay: -15s;
+                }
+
+                .floating-strategy:nth-child(6) {
+                    top: 65%;
+                    animation-delay: -18s;
+                }
+
+                .floating-strategy:nth-child(7) {
+                    top: 35%;
+                    animation-delay: -21s;
+                }
+
+                .floating-strategy:nth-child(8) {
+                    top: 55%;
+                    animation-delay: -23s;
+                }
+
+                @keyframes float {
+                    0% {
+                        transform: translateX(-100vw) rotateX(0deg) rotateY(0deg);
+                        opacity: 0;
+                    }
+                    10% {
+                        opacity: 0.3;
+                    }
+                    90% {
+                        opacity: 0.3;
+                    }
+                    100% {
+                        transform: translateX(100vw) rotateX(360deg) rotateY(360deg);
+                        opacity: 0;
+                    }
+                }
+            </style>
+        </section>
+    </div>
+    
     <!-- Main Content -->
-    <main class="container mx-auto px-6">
-        
+    <main class="container mx-auto px-6 md:px-12 lg:px-24">
+
         <!-- What Is Section -->
         <section id="learn-more" class="min-h-screen flex items-center py-20 reveal">
             <div class="flex flex-col md:flex-row items-center gap-12">
@@ -212,6 +317,15 @@
                     <p class="text-lg leading-relaxed text-gray-300">
                         Leveraging <span class="text-blue-400">12+ years of historical options data</span>, FireForge delivers instant, personalized trading insights that typically take hours to calculate manually.
                     </p>
+                    <div class="text-center mt-8">
+                        <a href="https://fireforge.gitbook.io/fireforge-documentation" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-6 py-3 text-lg font-semibold text-white border-2 border-white rounded-lg hover:bg-white hover:text-blue-400 transition-all duration-300">
+                            Learn more
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 0-1z"/>
+                                <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/>
+                            </svg>
+                        </a>
+                    </div>
                 </div>
                 <div class="md:w-1/2" data-aos="fade-left" data-aos-delay="300" data-aos-duration="800">
                     <div class="group relative overflow-hidden bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 p-8 rounded-lg shadow-2xl transform hover:scale-105 transition-all duration-300">
@@ -256,7 +370,9 @@
         <section class="min-h-screen flex items-center py-20 reveal-right">
             <div class="w-full">
                 <div class="text-center mb-16">
-                    <h2 class="text-4xl font-bold mb-6">Why Choose <span class="text-blue-400">FireForge</span> Options Explorer?</h2>
+                    <h2 class="text-4xl font-bold mb-6">Why Choose 
+                        <span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-600 animate-gradient">FireForge</span> Options Explorer?
+                    </h2>
                     <p class="text-xl text-gray-300 max-w-3xl mx-auto">
                         Stop spending hours on manual options backtesting. FireForge's AI-powered platform analyzes millions of data points to find your perfect strategy in seconds.
                     </p>
@@ -352,6 +468,15 @@
                         </div>
                     </div>
                 </div>
+                <div class="text-center mt-8">
+                    <a href="https://fireforge.gitbook.io/fireforge-documentation" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-6 py-3 text-lg font-semibold text-white border-2 border-white rounded-lg hover:bg-white hover:text-blue-400 transition-all duration-300">
+                        Learn more
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 0-1z"/>
+                            <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/>
+                        </svg>
+                    </a>
+                </div>
             </div>
         </section>
 
@@ -362,7 +487,7 @@
                     <h2 class="text-5xl font-bold mb-6 leading-normal">
                         <span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-600 animate-gradient">Find the best,</span> drop the rest
                     </h2>
-                    <p class="text-xl text-gray-300  mx-auto leading-relaxed">
+                    <p class="text-xl text-gray-300 mx-auto leading-relaxed">
                         Transform your trading by using strategies only in the environment that they perform best in. <br> Get rid of large drawdowns and use the right strategies at the right times.
                     </p>
                 </div>
@@ -371,9 +496,9 @@
                     <div class="flex flex-col md:flex-row justify-center items-center space-y-8 md:space-y-0 md:space-x-16">
 
                         <!-- Before Image -->
-                        <div class="w-full md:w-1/2 text-center transform -translate-x-full opacity-0 transition-all duration-1000" id="before-image">
+                        <div class="w-full md:w-1/2 transform -translate-x-full opacity-0 transition-all duration-1000" id="before-image">
                             <img src="images/perf.png" alt="Performance Before Using FireForge" 
-                                class="w-full h-96 object-contain mb-4 transition-transform duration-300 scale-110 filter brightness-110 image-glow"
+                                class="w-full h-80 object-contain mb-2 transition-transform duration-300 scale-110 filter brightness-110 image-glow"
                                 loading="lazy"
                                 decoding="async">
                             <p class="text-gray-300 italic">Before: Huge swings and large drawdowns</p>
@@ -395,7 +520,7 @@
                         <!-- After Image -->
                         <div class="w-full md:w-1/2 text-center transform -translate-x-full opacity-0 transition-all duration-1000" id="after-image">
                             <img src="images/perf2.png" alt="Performance After Using FireForge" 
-                                class="w-full h-96 object-contain mb-4 transition-transform duration-300 scale-110 filter brightness-110 image-glow"
+                                class="w-full h-80 object-contain mb-2 transition-transform duration-300 scale-110 filter brightness-110 image-glow"
                                 loading="lazy"
                                 decoding="async">
                             <p class="text-gray-300 italic">After: The same strategy, selectively applied</p>
