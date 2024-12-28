@@ -671,7 +671,7 @@
             const email = document.getElementById('waitlistEmail').value;
             
             try {
-                const response = await fetch('http://localhost:5000/collect_mail', {
+                const response = await fetch('http://api.fireforge.me/collect_mail', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
