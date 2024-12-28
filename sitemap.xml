@@ -1,37 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap-image/1.1">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://fireforge.me/</loc>
+        <loc>https://www.fireforge.me/</loc>
         <lastmod>2024-12-27</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://fireforge.me/#learn-more</loc>
+        <loc>https://www.fireforge.me/#learn-more</loc>
         <lastmod>2024-12-27</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://fireforge.me/#what-is-fireforge</loc>
+        <loc>https://www.fireforge.me/#what-is-fireforge</loc>
         <lastmod>2024-12-27</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://fireforge.me/#how-it-works</loc>
+        <loc>https://www.fireforge.me/#how-it-works</loc>
         <lastmod>2024-12-27</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://fireforge.me/#before-after</loc>
+        <loc>https://www.fireforge.me/#before-after</loc>
         <lastmod>2024-12-27</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://fireforge.me/#try-fireforge</loc>
+        <loc>https://www.fireforge.me/#try-fireforge</loc>
         <lastmod>2024-12-27</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
