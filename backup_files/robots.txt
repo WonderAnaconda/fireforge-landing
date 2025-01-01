@@ -1,0 +1,10 @@
+# Allow all search engines to crawl the entire site
+User-agent: *
+Disallow: 
+
+# Allow Googlebot to access the sitemap
+User-agent: Googlebot
+Allow: /sitemap.xml
+
+# Specify the location of the sitemap
+Sitemap: https://fireforge.me/sitemap.xml

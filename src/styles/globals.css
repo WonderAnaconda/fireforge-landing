@@ -1,0 +1,11 @@
+/* BeforeAfter animations */
+#before-image,
+#after-image {
+  transition: transform 0.8s ease-out, opacity 0.8s ease-out;
+}
+
+#before-image.active,
+#after-image.active {
+  transform: translateX(0);
+  opacity: 1;
+} 
