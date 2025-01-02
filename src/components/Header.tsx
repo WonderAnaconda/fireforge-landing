@@ -13,7 +13,7 @@ export default function Header() {
               alt="FireForge Options Trading Strategy Tool"
               width={480}
               height={480}
-              className="mx-auto mt-8 animate__animated animate__pulse animate__slower animate__infinite animate__duration-2s object-contain w-full max-w-[480px] h-auto"
+              className="mx-auto mt-8 animate__animated animate__pulse animate__infinite animate__duration-3s object-contain w-full max-w-[480px] h-auto"
               priority
             />
           </div>
@@ -27,7 +27,7 @@ export default function Header() {
           </p>
           <a
             href="#learn-more"
-            className="animate__animated animate__bounce animate__infinite animate__slower inline-block mt-16"
+            className="animate__animated animate__bounce animate__infinite animate__duration-3s inline-block mt-16"
             aria-label="Learn more about FireForge"
           >
             <svg className="w-8 h-8 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
