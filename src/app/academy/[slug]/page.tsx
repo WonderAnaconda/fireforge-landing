@@ -7,11 +7,9 @@ import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 
-type PageParams = {
-  slug: string;
-}
-
-export async function generateMetadata({ params }: { params: PageParams }): Promise<Metadata> {
+export async function generateMetadata(
+  { params }: { params: { slug: string } }
+): Promise<Metadata> {
   const article = articles.find(a => a.slug === params.slug);
   if (!article) return {};
 
@@ -33,13 +31,15 @@ export async function generateMetadata({ params }: { params: PageParams }): Prom
   };
 }
 
-export async function generateStaticParams(): Promise<PageParams[]> {
+export async function generateStaticParams() {
   return articles.map((article) => ({
     slug: article.slug,
   }));
 }
 
-export default async function Article({ params }: { params: PageParams }) {
+export default async function Article(
+  { params }: { params: { slug: string } }
+) {
   // If there are no articles at all, show coming soon page
   if (articles.length === 0) {
     return (
