@@ -7,12 +7,11 @@ import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 
-interface PageProps {
-  params: { slug: string };
-  searchParams: { [key: string]: string | string[] | undefined };
+type PageParams = {
+  slug: string;
 }
 
-export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+export async function generateMetadata({ params }: { params: PageParams }): Promise<Metadata> {
   const article = articles.find(a => a.slug === params.slug);
   if (!article) return {};
 
@@ -34,13 +33,13 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   };
 }
 
-export async function generateStaticParams() {
+export async function generateStaticParams(): Promise<PageParams[]> {
   return articles.map((article) => ({
     slug: article.slug,
   }));
 }
 
-export default async function Article({ params }: PageProps) {
+export default async function Article({ params }: { params: PageParams }) {
   // If there are no articles at all, show coming soon page
   if (articles.length === 0) {
     return (
