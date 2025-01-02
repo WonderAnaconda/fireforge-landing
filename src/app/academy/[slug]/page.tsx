@@ -7,9 +7,13 @@ import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 
-export async function generateMetadata(
-  { params }: { params: { slug: string } }
-): Promise<Metadata> {
+type Props = {
+  params: {
+    slug: string;
+  };
+};
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const article = articles.find(a => a.slug === params.slug);
   if (!article) return {};
 
@@ -31,13 +35,13 @@ export async function generateMetadata(
   };
 }
 
-export async function generateStaticParams() {
+export async function generateStaticParams(): Promise<Props['params'][]> {
   return articles.map((article) => ({
     slug: article.slug,
   }));
 }
 
-export default async function Page({ params }: { params: { slug: string } }) {
+async function Page({ params }: Props) {
   // If there are no articles at all, show coming soon page
   if (articles.length === 0) {
     return (
@@ -163,4 +167,6 @@ export default async function Page({ params }: { params: { slug: string } }) {
       </section>
     </main>
   );
-} 
+}
+
+export default Page; 
