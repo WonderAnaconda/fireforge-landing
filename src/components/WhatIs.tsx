@@ -44,7 +44,7 @@ export default function WhatIs() {
   }, []);
 
   return (
-    <section id="learn-more" className="min-h-screen flex items-center py-20 reveal">
+    <section id="learn-more" className="snapsection flex items-center py-20 reveal">
       <div className="container">
         <div className="flex flex-col md:flex-row items-center gap-12">
           <div className="md:w-1/2">

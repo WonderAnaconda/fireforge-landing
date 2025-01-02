@@ -45,7 +45,7 @@ export default function BeforeAfter() {
   }, []);
 
   return (
-    <section id="before-after" className="min-h-screen flex flex-col justify-center items-center py-12">
+    <section id="before-after" className="snapsection flex flex-col justify-center items-center py-12">
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12 reveal">

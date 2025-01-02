@@ -34,7 +34,7 @@ const steps = [
 
 export default function HowItWorks() {
   return (
-    <section id="how-it-works" className="min-h-screen flex items-center py-20 reveal">
+    <section id="how-it-works" className="snapsection flex items-center py-20 reveal">
       <div className="container">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold">

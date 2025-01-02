@@ -26,11 +26,18 @@ body {
   padding: 0 32px;
 }
 
-section {
+.snapsection {
   min-height: 100vh;
   scroll-snap-align: start;
   scroll-snap-stop: always;
   scroll-margin-top: 0;
+  padding: 6rem 0;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+section {
   padding: 6rem 0;
   display: flex;
   align-items: center;

@@ -24,10 +24,7 @@ export default function JoinAlpha() {
   }, []);
 
   return (
-    <section 
-      id="join-alpha" 
-      className="min-h-screen flex flex-col justify-center items-center py-12"
-    >
+    <section id="join-alpha" className="snapsection flex flex-col justify-center items-center py-12">
       <div className="container mx-auto px-4">
         <div className="text-center reveal">
           <h2 className="text-4xl sm:text-3xl lg:text-5xl font-bold mb-8">

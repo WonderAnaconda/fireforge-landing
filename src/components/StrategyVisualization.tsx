@@ -14,7 +14,7 @@ const strategyImages = [
 
 export default function StrategyVisualization() {
   return (
-    <section className="min-h-screen relative flex items-center justify-center overflow-hidden">
+    <section className="snapsection relative flex items-center justify-center overflow-hidden">
       {/* Background Animation Layer */}
       <div className="absolute inset-0 z-0">
         <div className="strategy-images">

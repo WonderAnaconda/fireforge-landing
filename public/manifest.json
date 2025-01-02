@@ -8,9 +8,15 @@
   "theme_color": "#0B0F17",
   "icons": [
     {
-      "src": "https://www.fireforge.me/favicon.png",
+      "src": "/images/favicon.png",
       "sizes": "192x192",
       "type": "image/png"
+    },
+    {
+      "src": "/images/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
     }
   ]
 } 

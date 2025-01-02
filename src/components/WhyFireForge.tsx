@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export default function WhyFireForge() {
   return (
-    <section id="what-is-fireforge" className="min-h-screen flex items-center py-20 reveal-right">
+    <section id="what-is-fireforge" className="snapsection flex items-center py-20 reveal-right">
       <div className="container mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-6">

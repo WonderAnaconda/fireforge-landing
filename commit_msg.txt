@@ -1,1 +1,21 @@
-- added lines bg to all pages
+- Fixed mobile layout for FAQ page
+- Reduced navbar height and improved mobile responsiveness
+- Reordered navigation items with FAQ first
+- Updated favicon implementation to use local files
+- Added proper PWA support with manifest.json
+- Added SVG favicon support
+- Created Academy section with article cards and dynamic article pages
+- Added test articles with lorem ipsum content
+- Installed Tailwind typography plugin for article styling
+- Added hero section with background image to article pages
+- Updated article images to use existing strategy images
+- Removed snap scrolling from Academy pages
+- Fixed scroll snapping to only apply to main page sections
+
+feat: Implement article metadata in HTML files
+- Modified articles.ts to read metadata from HTML files instead of hardcoded array
+- Added metadata sections to article HTML files using HTML comments
+- Each article now contains its own metadata (title, description, image, etc.)
+- System automatically reads all .html files in articles directory
+- More maintainable: new articles can be added by just creating HTML files
+- Removed redundant title H1s from articles since they're shown in hero section

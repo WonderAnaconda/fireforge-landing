@@ -50,14 +50,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="https://www.fireforge.me/favicon.svg" type="image/svg+xml" />
-        <link rel="icon" href="https://www.fireforge.me/favicon.png" type="image/x-icon" />
+        <link rel="icon" href="/images/favicon.svg" type="image/svg+xml" />
+        <link rel="icon" href="/images/favicon.png" type="image/png" />
         <link rel="manifest" href="/manifest.json" />
         <meta name="theme-color" content="#0B0F17" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black" />
         <meta name="apple-mobile-web-app-title" content="FireForge" />
-        <link rel="apple-touch-icon" href="https://www.fireforge.me/favicon.png" />
+        <link rel="apple-touch-icon" href="/images/favicon.png" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

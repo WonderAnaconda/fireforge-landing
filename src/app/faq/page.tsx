@@ -28,8 +28,8 @@ export default function FAQ() {
         
         <div className="space-y-16">
           {/* General Questions */}
-          <div className="grid grid-cols-[250px_1fr] gap-x-12">
-            <h2 className="text-2xl font-bold text-blue-400 sticky top-24">{copy.faq.generalQuestions.title}</h2>
+          <div className="grid md:grid-cols-[250px_1fr] gap-x-12 gap-y-6">
+            <h2 className="text-2xl font-bold text-blue-400 md:sticky md:top-24">{copy.faq.generalQuestions.title}</h2>
             <div className="space-y-8">
               {copy.faq.generalQuestions.items.map((item, index) => (
                 <div key={index} className="space-y-2">
@@ -41,8 +41,8 @@ export default function FAQ() {
           </div>
 
           {/* Features */}
-          <div className="grid grid-cols-[250px_1fr] gap-x-12">
-            <h2 className="text-2xl font-bold text-blue-400 sticky top-24">{copy.faq.features.title}</h2>
+          <div className="grid md:grid-cols-[250px_1fr] gap-x-12 gap-y-6">
+            <h2 className="text-2xl font-bold text-blue-400 md:sticky md:top-24">{copy.faq.features.title}</h2>
             <div className="space-y-8">
               {copy.faq.features.items.map((item, index) => (
                 <div key={index} className="space-y-3">
@@ -61,8 +61,8 @@ export default function FAQ() {
           </div>
 
           {/* Getting Started */}
-          <div className="grid grid-cols-[250px_1fr] gap-x-12">
-            <h2 className="text-2xl font-bold text-blue-400 sticky top-24">{copy.faq.gettingStarted.title}</h2>
+          <div className="grid md:grid-cols-[250px_1fr] gap-x-12 gap-y-6">
+            <h2 className="text-2xl font-bold text-blue-400 md:sticky md:top-24">{copy.faq.gettingStarted.title}</h2>
             <div className="space-y-8">
               {copy.faq.gettingStarted.items.map((item, index) => (
                 <div key={index} className="space-y-2">
@@ -74,8 +74,8 @@ export default function FAQ() {
           </div>
 
           {/* How FireForge Works */}
-          <div className="grid grid-cols-[250px_1fr] gap-x-12">
-            <h2 className="text-2xl font-bold text-blue-400 sticky top-24">{copy.faq.howItWorks.title}</h2>
+          <div className="grid md:grid-cols-[250px_1fr] gap-x-12 gap-y-6">
+            <h2 className="text-2xl font-bold text-blue-400 md:sticky md:top-24">{copy.faq.howItWorks.title}</h2>
             <div className="space-y-8">
               {copy.faq.howItWorks.items.map((item, index) => (
                 <div key={index} className="space-y-2">
@@ -87,8 +87,8 @@ export default function FAQ() {
           </div>
 
           {/* Advanced Features */}
-          <div className="grid grid-cols-[250px_1fr] gap-x-12">
-            <h2 className="text-2xl font-bold text-blue-400 sticky top-24">{copy.faq.advancedFeatures.title}</h2>
+          <div className="grid md:grid-cols-[250px_1fr] gap-x-12 gap-y-6">
+            <h2 className="text-2xl font-bold text-blue-400 md:sticky md:top-24">{copy.faq.advancedFeatures.title}</h2>
             <div className="space-y-8">
               {copy.faq.advancedFeatures.items.map((item, index) => (
                 <div key={index} className="space-y-2">
@@ -100,8 +100,8 @@ export default function FAQ() {
           </div>
 
           {/* Support and Troubleshooting */}
-          <div className="grid grid-cols-[250px_1fr] gap-x-12">
-            <h2 className="text-2xl font-bold text-blue-400 sticky top-24">{copy.faq.support.title}</h2>
+          <div className="grid md:grid-cols-[250px_1fr] gap-x-12 gap-y-6">
+            <h2 className="text-2xl font-bold text-blue-400 md:sticky md:top-24">{copy.faq.support.title}</h2>
             <div className="space-y-8">
               {copy.faq.support.items.map((item, index) => (
                 <div key={index} className="space-y-2">
