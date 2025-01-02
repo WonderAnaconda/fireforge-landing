@@ -26,3 +26,5 @@ feat: Implement article metadata in HTML files
 - Fixed Props type definition in [slug]/page.tsx to match Next.js requirements for Vercel deployment
 
 - Fixed animation speeds in production by adding explicit duration variables
+
+- Fixed slow animate.css and Tailwind animation speeds in production

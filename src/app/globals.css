@@ -11,6 +11,20 @@
   --animate-repeat: 1;
 }
 
+/* Fix for animate.css animations */
+.animate__animated {
+  --animate-duration: 1s !important;
+}
+
+/* Fix for Tailwind animations */
+.animate-bounce {
+  animation-duration: 1s !important;
+}
+
+.animate__pulse {
+  animation-duration: 2s !important;
+}
+
 body {
   color: rgb(var(--foreground-rgb));
   background-color: rgb(14, 17, 23);
