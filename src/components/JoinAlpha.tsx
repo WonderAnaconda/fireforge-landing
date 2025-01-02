@@ -24,9 +24,12 @@ export default function JoinAlpha() {
   }, []);
 
   return (
-    <>
-      <section id="join-alpha" className="min-h-screen flex flex-col justify-center items-center text-center py-32">
-        <div className="container">
+    <section 
+      id="join-alpha" 
+      className="min-h-screen flex flex-col justify-center items-center py-12"
+    >
+      <div className="container mx-auto px-4">
+        <div className="text-center reveal">
           <h2 className="text-4xl sm:text-3xl lg:text-5xl font-bold mb-8">
             Join the Free Alpha of <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-600 animate-gradient">FireForge</span>
           </h2>
@@ -42,14 +45,6 @@ export default function JoinAlpha() {
             <span className="relative">Try FireForge! →</span>
           </button>
         </div>
-      </section>
-      <div className="bg-blue-500 py-4 text-center">
-        <button
-          onClick={openModal}
-          className="text-xl font-bold hover:text-gray-100 transition-colors duration-300"
-        >
-          Try FireForge! <span className="inline-block">→</span>
-        </button>
       </div>
 
       {/* Waitlist Modal */}
@@ -102,7 +97,7 @@ export default function JoinAlpha() {
                 Join Waitlist
               </button>
             </form>
-            <button 
+            <button
               onClick={() => {
                 const modal = document.getElementById('waitlistModal');
                 if (modal) {
@@ -117,6 +112,6 @@ export default function JoinAlpha() {
           </div>
         </div>
       </div>
-    </>
+    </section>
   );
 } 

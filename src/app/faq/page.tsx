@@ -20,12 +20,12 @@ export const metadata: Metadata = {
   }
 };
 
-export default function FAQPage() {
+export default function FAQ() {
   return (
-    <main className="pt-24 pb-12 min-h-screen bg-gray-900">
+    <main className="pt-24 pb-12 min-h-screen">
       <div className="container mx-auto px-4">
         <h1 className="text-4xl font-bold text-center mb-16">{copy.faq.title}</h1>
-
+        
         <div className="space-y-16">
           {/* General Questions */}
           <div className="grid grid-cols-[250px_1fr] gap-x-12">

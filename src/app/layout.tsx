@@ -5,6 +5,7 @@ import './globals.css'
 import 'animate.css'
 import AnimationInitializer from '@/components/AnimationInitializer'
 import Navbar from '@/components/Navbar'
+import { Analytics } from '@vercel/analytics/react'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -82,9 +83,28 @@ export default function RootLayout({
         />
       </head>
       <body className={inter.className}>
-        <Navbar />
-        {children}
-        <AnimationInitializer />
+        <div 
+          className="min-h-screen bg-[#0B0F17]"
+          style={{
+            backgroundImage: 'url(/images/lines_bg.svg)',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
+            backgroundSize: 'cover',
+            backgroundAttachment: 'fixed',
+            position: 'fixed',
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            zIndex: -1
+          }}
+        />
+        <div className="relative">
+          <Navbar />
+          {children}
+          <AnimationInitializer />
+          <Analytics />
+        </div>
       </body>
     </html>
   )

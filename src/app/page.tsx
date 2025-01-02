@@ -37,7 +37,7 @@ export default function Home() {
       <HowItWorks />
       <BeforeAfter />
       <JoinAlpha />
-      <FloatingCTA />
+      <FloatingCTA key="floating-cta" />
     </main>
   );
 } 

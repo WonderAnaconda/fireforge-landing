@@ -20,9 +20,9 @@ export const metadata: Metadata = {
   }
 };
 
-export default function ToolsPage() {
+export default function Tools() {
   return (
-    <main className="min-h-screen bg-gray-900 flex items-center justify-center">
+    <main className="min-h-screen flex items-center justify-center">
       <div className="container mx-auto px-4 text-center">
         <div className="relative inline-block mb-8">
           <div className="absolute inset-0 bg-blue-500 blur-xl opacity-20 rounded-full"></div>

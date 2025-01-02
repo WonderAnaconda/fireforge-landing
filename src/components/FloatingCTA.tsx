@@ -3,26 +3,28 @@ import { useState, useEffect } from 'react';
 import { copy } from '@/content/copy';
 
 export default function FloatingCTA() {
-  const [isVisible, setIsVisible] = useState(false);
+  const [shouldMount, setShouldMount] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
       const header = document.querySelector('header');
       const joinAlpha = document.getElementById('join-alpha');
-      const ctaBanner = document.querySelector('.bg-blue-500.py-4');
 
-      if (!header || !joinAlpha || !ctaBanner) return;
+      if (!header || !joinAlpha) return;
 
       const headerRect = header.getBoundingClientRect();
       const joinAlphaRect = joinAlpha.getBoundingClientRect();
+      const windowHeight = window.innerHeight;
+      const documentHeight = document.documentElement.scrollHeight;
+      const scrollTop = window.scrollY;
 
       // Check if we're in the hero section
       const inHeroSection = headerRect.top <= 0 && headerRect.bottom > 0;
       
-      // Check if we're near the bottom sections
-      const nearBottom = joinAlphaRect.top <= (window.innerHeight * 0.75);
+      // Check if we're near the bottom of the page
+      const nearBottom = (windowHeight + scrollTop) >= (documentHeight - 100);
 
-      setIsVisible(!inHeroSection && !nearBottom);
+      setShouldMount(!inHeroSection && !nearBottom);
     };
 
     // Initial check
@@ -30,6 +32,11 @@ export default function FloatingCTA() {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  // Don't render anything if we shouldn't mount
+  if (!shouldMount) {
+    return null;
+  }
 
   const openModal = () => {
     const modal = document.getElementById('waitlistModal');
@@ -40,7 +47,7 @@ export default function FloatingCTA() {
   };
 
   return (
-    <div className={`fixed bottom-0 left-0 right-0 bg-gradient-to-r from-blue-600 to-blue-400 text-white text-center py-4 shadow-xl z-50 transition-opacity duration-300 ${isVisible ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
+    <div className="fixed bottom-0 left-0 right-0 bg-gradient-to-r from-blue-600 to-blue-400 text-white text-center py-4 shadow-xl z-50">
       <button 
         onClick={openModal}
         className="text-xl font-bold hover:text-gray-100 transition-colors duration-300"
