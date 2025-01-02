@@ -4,6 +4,7 @@ import { promises as fs } from 'fs';
 import * as fsSync from 'fs';
 import path from 'path';
 import type { Metadata } from 'next';
+import { type NextPage } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -37,9 +38,7 @@ export async function generateStaticParams() {
   }));
 }
 
-export default async function Article(
-  { params }: { params: { slug: string } }
-) {
+const ArticlePage: NextPage<{ params: { slug: string } }> = async ({ params }) => {
   // If there are no articles at all, show coming soon page
   if (articles.length === 0) {
     return (
@@ -165,4 +164,6 @@ export default async function Article(
       </section>
     </main>
   );
-} 
+};
+
+export default ArticlePage; 
