@@ -9,10 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@vercel/analytics": "^1.4.1",
+    "animate.css": "latest",
     "next": "latest",
     "react": "latest",
-    "react-dom": "latest",
-    "animate.css": "latest"
+    "react-dom": "latest"
   },
   "devDependencies": {
     "@types/node": "latest",
