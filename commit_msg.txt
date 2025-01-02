@@ -22,3 +22,5 @@ feat: Implement article metadata in HTML files
 - Modified articles.ts to handle spaces in filenames by converting them to hyphens in slugs
 
 - Fixed article file reading to properly handle spaces in filenames when loading content
+
+- Fixed Props type definition in [slug]/page.tsx to match Next.js requirements for Vercel deployment
