@@ -28,3 +28,7 @@ feat: Implement article metadata in HTML files
 - Fixed animation speeds in production by adding explicit duration variables
 
 - Fixed slow animate.css and Tailwind animation speeds in production
+
+- Fixed pulse animation to ensure consistent scaling behavior between local and production
+
+- Fixed package versions to ensure consistent behavior between local and production environments
