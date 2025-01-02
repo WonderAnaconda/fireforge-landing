@@ -6,6 +6,9 @@
   --foreground-rgb: 255, 255, 255;
   --background-start-rgb: 14, 17, 23;
   --background-end-rgb: 14, 17, 23;
+  --animate-duration: 1s;
+  --animate-delay: 1s;
+  --animate-repeat: 1;
 }
 
 body {
@@ -127,6 +130,8 @@ html {
   transform-style: preserve-3d;
   left: 50%;
   transform: translateX(-50%);
+  --float-duration: 25s !important;
+  animation-duration: var(--float-duration) !important;
 }
 
 @keyframes float {

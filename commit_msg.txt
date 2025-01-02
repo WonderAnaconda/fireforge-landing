@@ -24,3 +24,5 @@ feat: Implement article metadata in HTML files
 - Fixed article file reading to properly handle spaces in filenames when loading content
 
 - Fixed Props type definition in [slug]/page.tsx to match Next.js requirements for Vercel deployment
+
+- Fixed animation speeds in production by adding explicit duration variables
