@@ -1,0 +1,16 @@
+{
+  "name": "FireForge Options Explorer",
+  "short_name": "FireForge",
+  "description": "Advanced options trading strategy backtesting and optimization tool for SPX 0DTE options trading",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0B0F17",
+  "theme_color": "#0B0F17",
+  "icons": [
+    {
+      "src": "https://www.fireforge.me/favicon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+} 
