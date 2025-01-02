@@ -21,7 +21,8 @@ function getArticlesFromFiles(): Article[] {
     // Read and parse each file
     return files.map(file => {
       const content = fs.readFileSync(path.join(articlesDir, file), 'utf8');
-      const slug = file.replace('.html', '');
+      // Create slug from filename: remove .html and replace spaces with hyphens
+      const slug = file.replace('.html', '').replace(/\s+/g, '-');
       
       // Extract metadata from HTML comments - more flexible pattern
       const metadataMatch = content.match(/<!--METADATA\s*([\s\S]*?)\s*-->/);

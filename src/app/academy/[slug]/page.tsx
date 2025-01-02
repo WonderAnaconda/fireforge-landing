@@ -1,6 +1,7 @@
 import { articles } from '@/content/articles';
 import { metadata as siteMetadata } from '@/content/metadata';
 import { promises as fs } from 'fs';
+import * as fsSync from 'fs';
 import path from 'path';
 import type { Metadata } from 'next';
 import Image from 'next/image';
@@ -69,7 +70,20 @@ export default async function Article({ params }: Props) {
   const article = articles.find(a => a.slug === params.slug);
   if (!article) return null;
 
-  const filePath = path.join(process.cwd(), 'src', 'content', 'articles', `${params.slug}.html`);
+  // Get all HTML files in the articles directory
+  const articlesDir = path.join(process.cwd(), 'src', 'content', 'articles');
+  const files = fsSync.readdirSync(articlesDir);
+  
+  // Find the actual filename that matches this slug
+  const actualFilename = files.find((file: string) => 
+    file.replace('.html', '').replace(/\s+/g, '-') === params.slug
+  );
+  
+  if (!actualFilename) {
+    throw new Error(`Could not find article file for slug: ${params.slug}`);
+  }
+
+  const filePath = path.join(process.cwd(), 'src', 'content', 'articles', actualFilename);
   const content = await fs.readFile(filePath, 'utf8');
 
   // Get 3 random articles excluding the current one

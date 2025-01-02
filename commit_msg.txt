@@ -19,3 +19,6 @@ feat: Implement article metadata in HTML files
 - System automatically reads all .html files in articles directory
 - More maintainable: new articles can be added by just creating HTML files
 - Removed redundant title H1s from articles since they're shown in hero section
+- Modified articles.ts to handle spaces in filenames by converting them to hyphens in slugs
+
+- Fixed article file reading to properly handle spaces in filenames when loading content
