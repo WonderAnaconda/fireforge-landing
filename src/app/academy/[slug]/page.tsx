@@ -7,11 +7,12 @@ import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 
-interface Props {
+type Props = {
   params: {
     slug: string;
   };
-}
+  searchParams: { [key: string]: string | string[] | undefined };
+};
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const article = articles.find(a => a.slug === params.slug);
