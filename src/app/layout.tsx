@@ -6,6 +6,7 @@ import 'animate.css'
 import AnimationInitializer from '@/components/AnimationInitializer'
 import Navbar from '@/components/Navbar'
 import { Analytics } from '@vercel/analytics/react'
+import { SpeedInsights } from '@vercel/speed-insights/next'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -104,6 +105,7 @@ export default function RootLayout({
           {children}
           <AnimationInitializer />
           <Analytics />
+          <SpeedInsights />
         </div>
       </body>
     </html>
