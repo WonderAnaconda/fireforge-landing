@@ -26,3 +26,5 @@ feat: Implement article metadata in HTML files
 - Fixed Props type definition in [slug]/page.tsx to match Next.js requirements for Vercel deployment
 
 - Fixed animation speeds by properly configuring animate.css classes and durations
+
+- Fixed logo pulse animation inconsistency by replacing animate.css pulse with custom CSS animation

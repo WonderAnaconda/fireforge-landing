@@ -6,14 +6,14 @@ export default function Header() {
   return (
     <header className="min-h-screen flex items-center justify-center relative overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="text-center animate__animated animate__fadeIn animate__duration-1s">
+        <div className="text-center animate__animated animate__fadeIn animate__slower">
           <div className="mb-16">
             <Image
               src="/images/logo.png"
               alt="FireForge Options Trading Strategy Tool"
               width={480}
               height={480}
-              className="mx-auto mt-8 animate__animated animate__pulse animate__infinite animate__duration-3s object-contain w-full max-w-[480px] h-auto"
+              className="mx-auto mt-8 logo-pulse object-contain w-full max-w-[480px] h-auto"
               priority
             />
           </div>
@@ -27,7 +27,7 @@ export default function Header() {
           </p>
           <a
             href="#learn-more"
-            className="animate__animated animate__bounce animate__infinite animate__duration-3s inline-block mt-16"
+            className="animate__animated animate__bounce animate__infinite animate__slower inline-block mt-16"
             aria-label="Learn more about FireForge"
           >
             <svg className="w-8 h-8 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
