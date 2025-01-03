@@ -3,12 +3,12 @@ import { metadata as siteMetadata } from '@/content/metadata';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: siteMetadata.tools.title,
-  description: siteMetadata.tools.description,
+  title: 'Tools - FireForge Options Trading Strategy Backtesting Tool',
+  description: 'Explore our suite of options trading tools designed to help you make better trading decisions. Backtest strategies, analyze market data, and optimize your trades.',
   keywords: siteMetadata.tools.keywords,
   openGraph: {
-    title: siteMetadata.tools.title,
-    description: siteMetadata.tools.description,
+    title: 'Tools - FireForge Options Trading Strategy Backtesting Tool',
+    description: 'Explore our suite of options trading tools designed to help you make better trading decisions. Backtest strategies, analyze market data, and optimize your trades.',
     images: [siteMetadata.defaultImage],
     type: 'website',
   },
@@ -17,6 +17,9 @@ export const metadata: Metadata = {
     title: siteMetadata.tools.title,
     description: siteMetadata.tools.description,
     images: [siteMetadata.defaultImage],
+  },
+  alternates: {
+    canonical: 'https://www.fireforge.me/tools'
   }
 };
 

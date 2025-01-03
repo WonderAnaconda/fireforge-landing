@@ -3,12 +3,12 @@ import { metadata as siteMetadata } from '@/content/metadata';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: siteMetadata.faq.title,
-  description: siteMetadata.faq.description,
+  title: 'FAQ - FireForge Options Trading Strategy Backtesting Tool',
+  description: 'Frequently asked questions about FireForge\'s options trading strategy backtesting tool. Learn how to use our platform to optimize your options trading strategies.',
   keywords: siteMetadata.faq.keywords,
   openGraph: {
-    title: siteMetadata.faq.title,
-    description: siteMetadata.faq.description,
+    title: 'FAQ - FireForge Options Trading Strategy Backtesting Tool',
+    description: 'Frequently asked questions about FireForge\'s options trading strategy backtesting tool. Learn how to use our platform to optimize your options trading strategies.',
     images: [siteMetadata.defaultImage],
     type: 'website',
   },
@@ -17,6 +17,9 @@ export const metadata: Metadata = {
     title: siteMetadata.faq.title,
     description: siteMetadata.faq.description,
     images: [siteMetadata.defaultImage],
+  },
+  alternates: {
+    canonical: 'https://www.fireforge.me/faq'
   }
 };
 

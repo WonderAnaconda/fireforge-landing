@@ -36,10 +36,7 @@ export const metadata: Metadata = {
   },
   robots: 'index, follow, max-image-preview:large',
   authors: [{ name: 'FireForge Team' }],
-  keywords: 'options trading, options backtesting, options strategy, options Explorer, trading optimization, algorithmic trading, options screener, options trading tool',
-  alternates: {
-    canonical: 'https://www.fireforge.me'
-  }
+  keywords: 'options trading, options backtesting, options strategy, options Explorer, trading optimization, algorithmic trading, options screener, options trading tool'
 }
 
 export default function RootLayout({

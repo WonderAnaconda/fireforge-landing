@@ -5,12 +5,12 @@ import { metadata as siteMetadata } from '@/content/metadata';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: siteMetadata.academy.title,
-  description: siteMetadata.academy.description,
+  title: 'Academy - FireForge Options Trading Strategy Backtesting Tool',
+  description: 'Learn options trading strategies and best practices with FireForge\'s comprehensive academy. From basics to advanced concepts, improve your trading knowledge.',
   keywords: siteMetadata.academy.keywords,
   openGraph: {
-    title: siteMetadata.academy.title,
-    description: siteMetadata.academy.description,
+    title: 'Academy - FireForge Options Trading Strategy Backtesting Tool',
+    description: 'Learn options trading strategies and best practices with FireForge\'s comprehensive academy. From basics to advanced concepts, improve your trading knowledge.',
     images: [siteMetadata.defaultImage],
     type: 'website',
   },
@@ -19,6 +19,9 @@ export const metadata: Metadata = {
     title: siteMetadata.academy.title,
     description: siteMetadata.academy.description,
     images: [siteMetadata.defaultImage],
+  },
+  alternates: {
+    canonical: 'https://www.fireforge.me/academy'
   }
 };
 

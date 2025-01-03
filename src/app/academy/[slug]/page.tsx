@@ -25,6 +25,9 @@ export async function generateMetadata({ params }: { params: { slug: string } })
       title: `${article.title} | FireForge Academy`,
       description: article.description,
       images: [article.image],
+    },
+    alternates: {
+      canonical: `https://www.fireforge.me/academy/${params.slug}`
     }
   };
 }

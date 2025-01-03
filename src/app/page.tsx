@@ -24,6 +24,9 @@ export const metadata: Metadata = {
     title: siteMetadata.home.title,
     description: siteMetadata.home.description,
     images: [siteMetadata.defaultImage],
+  },
+  alternates: {
+    canonical: 'https://www.fireforge.me'
   }
 };
 
