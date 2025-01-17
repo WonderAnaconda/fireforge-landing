@@ -23,7 +23,7 @@ body {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 32px;
+  padding: 0 32p;
 }
 
 .snapsection {
@@ -83,6 +83,18 @@ header {
 }
 
 .reveal-up.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Add new reveal animation styles */
+.reveal-down {
+  opacity: 0;
+  transform: translateY(-30px);
+  transition: all 1s ease;
+}
+
+.reveal-down.active {
   opacity: 1;
   transform: translateY(0);
 }

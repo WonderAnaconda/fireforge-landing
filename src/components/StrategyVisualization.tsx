@@ -39,7 +39,7 @@ export default function StrategyVisualization() {
       {/* Foreground Content */}
       <div className="container relative z-10 text-center">
         <h2 className="text-5xl sm:text-6xl font-bold leading-tight bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-600 animate-gradient mb-12 py-2">
-          Beauty in Simplicity
+          Structure Your Trading
         </h2>
         <h2 className="text-3xl sm:text-4xl text-gray-300 font-bold leading-tight max-w-4xl mx-auto">
           <span>Just Define What is Important to You—</span><br/>

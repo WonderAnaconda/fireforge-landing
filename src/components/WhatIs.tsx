@@ -49,13 +49,13 @@ export default function WhatIs() {
         <div className="flex flex-col md:flex-row items-center gap-12">
           <div className="md:w-1/2">
             <h2 ref={typingRef} className="text-4xl font-bold mb-6 typing">
-              What is <span className="text-blue-400">FireForge</span> Options Explorer?
+              What is <span className="text-blue-400">FireForge</span>?
             </h2>
             <p className="text-xl leading-relaxed text-gray-300 mb-6">
-              The <span className="text-blue-400">most advanced</span> options strategy explorer available. We use 12+ years of options backtesting data. That is why we can help traders find the right options strategies <span className="text-blue-400">right away</span>.
+              The most advanced <span className="text-blue-400">options strategy explorer</span> available. We use 12+ years of options backtesting data. That is why we can help traders find the <span className="text-blue-400">right options strategies</span> straight away.
             </p>
             <p className="text-xl leading-relaxed text-gray-300">
-              FireForge shows <span className="text-blue-400">trading strategies</span> in line with YOUR goals. Stop guessing and get <span className="text-blue-400">actionable results!</span>
+              FireForge shows trading strategies in line with <span className="text-blue-400">your goals</span>. Stop guessing and get <span className="text-blue-400">actionable results!</span>
             </p>
             <div className="text-center mt-8">
               <a

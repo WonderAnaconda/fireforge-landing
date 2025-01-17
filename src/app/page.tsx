@@ -4,7 +4,7 @@ import Header from '@/components/Header';
 import StrategyVisualization from '@/components/StrategyVisualization';
 import WhatIs from '@/components/WhatIs';
 import WhyFireForge from '@/components/WhyFireForge';
-import HowItWorks from '@/components/HowItWorks';
+import HowItWorksWithVideo from '@/components/HowItWorksWithVideo';
 import BeforeAfter from '@/components/BeforeAfter';
 import JoinAlpha from '@/components/JoinAlpha';
 import FloatingCTA from '@/components/FloatingCTA';
@@ -34,10 +34,10 @@ export default function Home() {
   return (
     <main>
       <Header />
-      <StrategyVisualization />
+      {/* <StrategyVisualization /> */}
       <WhatIs />
+      <HowItWorksWithVideo />
       <WhyFireForge />
-      <HowItWorks />
       <BeforeAfter />
       <JoinAlpha />
       <FloatingCTA key="floating-cta" />

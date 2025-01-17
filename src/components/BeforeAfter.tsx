@@ -53,7 +53,7 @@ export default function BeforeAfter() {
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-600 animate-gradient">Find the best,</span> drop the rest
             </h2>
             <p className="text-xl text-gray-300 mx-auto leading-relaxed">
-              Transform your trading. Use strategies only in the environment that they perform best in. <br /> 
+              Transform your trading: Use strategies only in the environment that they perform best in. We tested all the settings so we know which work best.<br /> <br /> 
               Get rid of large drawdowns and use the right strategies at the right times.
             </p>
           </div>
