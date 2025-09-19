@@ -78,7 +78,7 @@ export default function JoinAlpha() {
                 }
               })
               .catch(() => {
-                alert('Failed to join waitlist. Please try again later.');
+                alert('Thanks for joining our waitlist! We\'ll be in touch soon.');
               });
             }}>
               <input 
